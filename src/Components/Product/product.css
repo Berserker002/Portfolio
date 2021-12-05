@@ -1,6 +1,6 @@
 .p{
     width: 30%;
-    height: 40vh;
+    height: 60vh;
     margin: 20px 10px;
     border : 2px solid rgb(243, 242,242);
     border-radius: 10px 10px 0px 0px;
@@ -12,6 +12,8 @@
     background-color: rgb(243, 242,242);
     display: flex;
     align-items: center;
+    position: sticky;
+    z-index: 2;
 }
 
 .p-circle{
@@ -20,4 +22,13 @@
     border-radius: 50%;
     background-color: white;
     margin: 3px;
+}
+
+.p-img{
+    width: 100%;
+    transition: all 5s ease;
+}
+
+.p:hover .p-img{
+    transform: translateY(-25%);
 }
